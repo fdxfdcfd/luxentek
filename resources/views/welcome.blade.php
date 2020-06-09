@@ -64,6 +64,9 @@
         </style>
     </head>
     <body>
+    @foreach ($pages as $pages)
+        <a href="{{ $pages->url }}">{{ $pages->title }}</a>
+    @endforeach
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
