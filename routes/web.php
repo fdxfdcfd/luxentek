@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $pages = \App\Page::all();
-    return view('welcome', ['pages' => $pages]);
+    return view('index');
 });
+
+Route::get('/{identify}', ['uses' => 'PageController@view']);
