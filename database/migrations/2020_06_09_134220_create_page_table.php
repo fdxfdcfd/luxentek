@@ -18,6 +18,7 @@ class CreatePageTable extends Migration
             $table->string('title');
             $table->string('identify')->unique()->index();
             $table->text('content');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }
