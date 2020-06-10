@@ -13,7 +13,7 @@ class PageController extends Controller
         $identify = str_replace(".html", "", $identify);
         $page = Page::where('identify', $identify)->first();
         if ($page) {
-            return view('page', ['page' => $page]);
+            return view('page', ['page' => $page, 'currentPage' => $identify]);
         }
         return abort(404);
 

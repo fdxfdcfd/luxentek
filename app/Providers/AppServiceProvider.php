@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $pageList = Page::all();
+        $pageList = Page::where('status', 1)->get();
         View::share('pageList', $pageList);
     }
 }

@@ -5,7 +5,7 @@
                 <li>
                     <div id="{{$page->identify}}">
                         <span>
-                            <a href="{{url('/')}}/{{$page->identify}}.html">{{$page->title}}</a>
+                            <a @if ($currentPage == $page->identify) class="active" @endif href="{{url('/')}}/{{$page->identify}}.html">{{$page->title}}</a>
                         </span>
                     </div>
                 </li>

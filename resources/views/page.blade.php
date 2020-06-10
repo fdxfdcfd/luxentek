@@ -9,7 +9,7 @@
 <body>
 <div class="container">
     <div class="top">
-        @component('layouts.components.navbar')
+        @component('layouts.components.navbar', ['currentPage' => $currentPage])
         @endcomponent
     </div>
     <div class="content">
