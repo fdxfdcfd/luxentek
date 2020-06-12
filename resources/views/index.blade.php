@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet/less" type="text/css" href="{{URL::asset('css/style.less')}}"/>
     <title>Luxentek</title>
+    <title>Luxentek</title>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet">
+    <link href="{{URL::asset('css/style.less')}}" rel="stylesheet/less" type="text/css"/>
 </head>
 <body>
 <div class="container">
